@@ -16,11 +16,11 @@ const BLOG = {
   comment: {  // support provider: gitalk
     provider: 'gitalk', // leave it empty if you don't need any comment plugin
     config: {
-      repo: '', // The repository of store comments
-      owner: '',
-      admin: [],
-      clientID: '',
-      clientSecret: '',
+      repo: 'nobelium-comment-demo', // The repository of store comments
+      owner: 'ruter',
+      admin: ['ruter'],
+      clientID: 'b99fe523e420b37914f7',
+      clientSecret: 'e2d956369551e10b1221ebd1cab6bb8c3a03747b',
       distractionFreeMode: false, // Facebook-like distraction free mode
     }
   }
