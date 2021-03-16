@@ -75,7 +75,6 @@ const BlogLayout = ({ children, blockMap, frontMatter }) => {
         <GitalkComponent options={{
           id: frontMatter.id,
           title: frontMatter.title,
-          body: `${location.href}\n${frontMatter.summary}`,
           clientID: BLOG.comment.config.clientID,
           clientSecret: BLOG.comment.config.clientSecret,
           repo: BLOG.comment.config.repo,
