@@ -7,9 +7,10 @@ const NavBar = () => {
   const locale = useLocale()
   const links = [
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
-    { id: 1, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
-    { id: 2, name: locale.NAV.RSS, to: '/feed', show: true },
-    { id: 3, name: locale.NAV.SEARCH, to: '/search', show: true }
+    { id: 1, name: locale.NAV.LINKS, to: '/links', show: true },
+    { id: 2, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
+    { id: 3, name: locale.NAV.RSS, to: '/feed', show: true },
+    { id: 4, name: locale.NAV.SEARCH, to: '/search', show: true }
   ]
   return (
     <div className="flex-shrink-0">
@@ -108,7 +109,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
               )
             : (
             <p className="ml-2 font-medium text-day dark:text-night header-name">
-              {BLOG.title},{' '}
+              {BLOG.title}{' '}
               <span className="font-normal">{BLOG.description}</span>
             </p>
               )}
