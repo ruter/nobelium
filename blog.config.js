@@ -3,7 +3,7 @@ const BLOG = {
   author: 'Ruter Lü',
   email: 'i@ruterly.com',
   link: 'https://ruterly.com',
-  description: 'This gonna be an awesome website.',
+  description: 'Share with you.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'light', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
