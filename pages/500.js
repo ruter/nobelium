@@ -7,12 +7,12 @@ export default function Custom500() {
       <h5>Internal Server error !</h5>
       <h1>5</h1>
       <h1>00</h1>
-      <div class="box">
+      <div className="box">
         <span></span><span></span>
         <span></span><span></span>
         <span></span>
       </div>
-      <div class="box">
+      <div className="box">
         <span></span><span></span>
         <span></span><span></span>
         <span></span>
