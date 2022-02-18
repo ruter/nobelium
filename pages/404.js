@@ -1,8 +1,6 @@
-import Container from '@/components/Container'
-
 export default function Custom404 () {
   return (
-    <Container>
+    <div>
       <figure>
         <div className="sad-mac"></div>
         <figcaption>
@@ -126,6 +124,6 @@ export default function Custom404 () {
       }
       `}
       </style>
-    </Container>
+    </div>
   )
 }

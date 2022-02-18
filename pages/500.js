@@ -1,8 +1,6 @@
-import Container from '@/components/Container'
-
 export default function Custom500 () {
   return (
-    <Container>
+    <div>
       <h5>Internal Server error !</h5>
       <h1>5</h1>
       <h1>00</h1>
@@ -188,6 +186,6 @@ export default function Custom500 () {
         color: cyan;
       }
       `}</style>
-    </Container>
+    </div>
   )
 }
