@@ -1,5 +1,4 @@
 import Container from '@/components/Container'
-import '@/styles/500.css'
 
 export default function Custom500 () {
   return (
