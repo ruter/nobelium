@@ -1,10 +1,11 @@
 import Layout from '@/layouts/layout'
 import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import BLOG from '@/blog.config'
+import Custom404 from './404'
 import { createHash } from 'crypto'
 
 const BlogPost = ({ post, blockMap, emailHash }) => {
-  if (!post) return null
+  if (!post) return Custom404()
   return (
     <Layout
       blockMap={blockMap}
