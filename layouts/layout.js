@@ -10,7 +10,17 @@ import { useRouter } from 'next/router'
 import Comments from '@/components/Comments'
 
 const Code = dynamic(() =>
-  import('react-notion-x/build/third-party/code').then((m) => m.Code)
+  import('react-notion-x/build/third-party/code').then(async (m) => {
+    // additional prism syntaxes
+    await Promise.all([
+      import('prismjs/components/prism-bash.js'),
+      import('prismjs/components/prism-python.js'),
+      import('prismjs/components/prism-rust.js'),
+      import('prismjs/components/prism-sql.js'),
+      import('prismjs/components/prism-yaml.js')
+    ])
+    return m.Code
+  })
 )
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then(
