@@ -17,11 +17,6 @@ const Collection = dynamic(() =>
     (m) => m.Collection
   )
 )
-const CollectionRow = dynamic(() =>
-  import('react-notion-x/build/third-party/collection-row').then(
-    (m) => m.CollectionRow
-  )
-)
 const Equation = dynamic(() =>
   import('react-notion-x/build/third-party/equation').then((m) => m.Equation)
 )
@@ -90,8 +85,7 @@ const Layout = ({
               components={{
                 equation: Equation,
                 code: Code,
-                collection: Collection,
-                collectionRow: CollectionRow
+                collection: Collection
               }}
               mapPageUrl={mapPageUrl}
             />
