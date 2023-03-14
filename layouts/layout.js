@@ -19,7 +19,7 @@ const Collection = dynamic(() =>
 )
 const CollectionRow = dynamic(() =>
   import('react-notion-x/build/third-party/collection-row').then(
-    (m) => m.Collection
+    (m) => m.CollectionRow
   )
 )
 const Equation = dynamic(() =>
