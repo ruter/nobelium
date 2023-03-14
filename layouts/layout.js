@@ -97,9 +97,9 @@ const Layout = ({
             <NotionRenderer
               recordMap={blockMap}
               components={{
-                code: Code,
-                collection: Collection,
-                equation: Equation
+                Code,
+                Collection,
+                Equation
               }}
               mapPageUrl={mapPageUrl}
             />
