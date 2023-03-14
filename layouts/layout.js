@@ -9,6 +9,10 @@ import { useLocale } from '@/lib/locale'
 import { useRouter } from 'next/router'
 import Comments from '@/components/Comments'
 
+// -----------------------------------------------------------------------------
+// dynamic imports for optional components
+// -----------------------------------------------------------------------------
+
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
     // additional prism syntaxes
@@ -93,9 +97,9 @@ const Layout = ({
             <NotionRenderer
               recordMap={blockMap}
               components={{
-                equation: Equation,
                 code: Code,
-                collection: Collection
+                collection: Collection,
+                equation: Equation
               }}
               mapPageUrl={mapPageUrl}
             />
